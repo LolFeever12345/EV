@@ -7,11 +7,12 @@
 
 Adafruit_MPU6050 mpu;
 Encoder Rencoder(3 /*Encoder Pin A*/, 5 /*Encoder Pin B*/);
+
 Motor Rmotor(8 /*IN1*/, 9 /*IN2*/, 11 /*ENA*/);
 Encoder Lencoder(2 /*Encoder Pin A*/, 4 /*Encoder Pin B*/);
 Motor Lmotor(6 /*IN3*/ , 7 /*IN4*/ ,10 /*ENB*/);
-PID right(.9f/*Kp*/, .18f/*Ki*/, 0.0f/*Kd*/, 60.f/*Diameter of the wheels*/, 100.37f /*Gear Ratio of Motor*/, 12 /*CPR*/);
-PID left(.9f/*Kp*/, .18f/*Ki*/, 0.0f/*Kd*/, 60.f/*Diameter of the wheels*/, 100.37f /*Gear Ratio of Motor*/, 12 /*CPR*/);
+PID right(.1f/*Kp*/, 0.2f/*Ki*/, 0.0f/*Kd*/, 60.f/*Diameter of the wheels*/, 100.37f /*Gear Ratio of Motor*/, 12 /*CPR*/);
+PID left(.1f/*Kp*/, 0.2f/*Ki*/, 0.0f/*Kd*/, 60.f/*Diameter of the wheels*/, 100.37f /*Gear Ratio of Motor*/, 12 /*CPR*/);
 uint8_t butxtonState;
 
 Drive drive(left, right, Lmotor, Rmotor, Lencoder, Rencoder, mpu, 106 /* The distance between the wheels*/, 60 /* The diameter of the wheels*/);
@@ -36,7 +37,7 @@ void loop() {
   lastState = currentState;
   delay(20);
   if(runState){
-    drive.driveDistance(1000,700);
+    drive.driveDistance(2000,500);
     drive.stop();
     runState = false;
   }

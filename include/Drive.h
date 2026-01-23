@@ -49,7 +49,7 @@ class Drive{
         float wDiameter;
         float bias = 0.f;
 
-        float Kp = 0.0001f;
+        float Kp = 0.01f;
 
         uint8_t startPWM(int linSpeed);
 
