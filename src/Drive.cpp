@@ -55,7 +55,7 @@ void Drive::driveDistance(float distance, int speed){
     while(abs(currDistance)<abs(distance)){
         dt = (now-prevTime)/1000.f;
         if(dt>= 0.1f){
-            Lmotor.drive(Lcon.output(Lenc,speed,dt));
+            Lmotor.drive(Lcon.output(Lenc,speed+steeringCorrection,dt));
             Rmotor.drive(Rcon.output(Renc,speed,dt));
             prevTime = now;
             currDistance = (Lenc.read()*Lcon.MPC+Renc.read()*Rcon.MPC)/2.f;
