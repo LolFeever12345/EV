@@ -39,3 +39,7 @@ The filtered heading information can then be used to correct the vehicle's direc
 ### Example Chassis Utilized
 <img width="826" height="398" alt="Screenshot 2026-09-04 053011" src="https://github.com/user-attachments/assets/93b86672-19ac-4d45-9dbe-ab4d495edb74" />
 <img width="914" height="384" alt="Screenshot 2026-09-04 053227" src="https://github.com/user-attachments/assets/6021238a-4669-418b-94a1-b2e3f2186e69" />
+
+### PID Tuning Tool
+
+I wrote a script to analyze the output of the PID controller to measure and minimize oscillations. Repo: https://github.com/LolFeever12345/PIDData
