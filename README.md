@@ -1,4 +1,3 @@
-<img width="914" height="384" alt="Screenshot 2026-09-04 053227" src="https://github.com/user-attachments/assets/6021238a-4669-418b-94a1-b2e3f2186e69" />
 # Electric Vehicle
 
 ## Overview
@@ -39,3 +38,4 @@ The filtered heading information can then be used to correct the vehicle's direc
 
 ### Example Chassis Utilized
 <img width="826" height="398" alt="Screenshot 2026-09-04 053011" src="https://github.com/user-attachments/assets/93b86672-19ac-4d45-9dbe-ab4d495edb74" />
+<img width="914" height="384" alt="Screenshot 2026-09-04 053227" src="https://github.com/user-attachments/assets/6021238a-4669-418b-94a1-b2e3f2186e69" />
