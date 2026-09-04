@@ -35,3 +35,6 @@ Encoders provide measurements of the motor or wheel movement. This feedback allo
 The vehicle uses gyroscope measurements to estimate its heading. Because gyroscope data can contain noise, the measurements are processed through a Kalman filter.
 
 The filtered heading information can then be used to correct the vehicle's direction while driving and to improve the accuracy of 90-degree turns.
+
+### Example Chassis Utilized
+<img width="826" height="398" alt="Screenshot 2026-09-04 053011" src="https://github.com/user-attachments/assets/93b86672-19ac-4d45-9dbe-ab4d495edb74" />
